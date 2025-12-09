@@ -1,5 +1,9 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 4 (Polimento)
+### Adicionado
+- **Animação de Entrada:** Implementado um efeito de "fade-in" suave para o conteúdo da página no carregamento, melhorando a experiência inicial do usuário.
+
 ## [2024-07-27] - FASE 3 Concluída (Responsividade)
 ### Adicionado
 - **Responsividade:** Aplicadas classes responsivas do Tailwind CSS para ajustar fontes e espaçamentos em dispositivos móveis.

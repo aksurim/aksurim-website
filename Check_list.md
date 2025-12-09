@@ -18,6 +18,6 @@
 - [x] Ajustar responsividade (tamanhos de fonte e padding no mobile).
 
 ## FASE 4: Polimento Final [ ]
-- [ ] Adicionar animação de Fade-in ao carregar a página.
+- [x] Adicionar animação de Fade-in ao carregar a página.
 - [ ] Verificar performance no mobile.
 - [ ] Atualizar documentação final.
