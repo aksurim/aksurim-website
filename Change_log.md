@@ -1,5 +1,10 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 4 (Conclusão e Decisão de Arquitetura)
+### Modificado
+- **Arquitetura CSS:** Após tentativa de migração para uma instalação local do Tailwind CSS via `npm`, foram encontrados problemas de ambiente que impediram a execução dos scripts de compilação.
+- **Decisão:** Para garantir a estabilidade e a manutenibilidade do projeto, a migração foi revertida. O projeto continuará utilizando o Tailwind CSS via CDN, com as cores personalizadas da marca configuradas diretamente no `index.html`. Esta abordagem se mostrou robusta e funcional no ambiente de desenvolvimento atual.
+
 ## [2024-07-27] - FASE 4 (Polimento e Otimização)
 ### Adicionado
 - **Otimização Mobile:** O número de partículas da animação agora é reduzido em telas menores para garantir melhor performance.

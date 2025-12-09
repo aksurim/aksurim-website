@@ -17,7 +17,7 @@
 - [x] Inserir Footer com créditos para "Joannderson Lucena".
 - [x] Ajustar responsividade (tamanhos de fonte e padding no mobile).
 
-## FASE 4: Polimento Final [ ]
+## FASE 4: Polimento Final [x]
 - [x] Adicionar animação de Fade-in ao carregar a página.
 - [x] Verificar performance no mobile.
-- [ ] Atualizar documentação final.
+- [x] Atualizar documentação final.

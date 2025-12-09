@@ -1,14 +1,19 @@
 {
-  "name": "lading_page_Aksurim",
+  "name": "lading_page_aksurim",
   "version": "1.0.0",
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "build:css": "node_modules\\.bin\\tailwindcss -i .\\src\\input.css -o .\\dist\\output.css",
+    "dev:css": "node_modules\\.bin\\tailwindcss -i .\\src\\input.css -o .\\dist\\output.css --watch"
   },
-  "dependencies": {},
   "devDependencies": {
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.5.3"
   },
-  "private": true
+  "private": true,
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
