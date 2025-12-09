@@ -11,10 +11,10 @@
 - [x] Ajustar cores das partículas para #DAF043 e #06777F.
 - [x] Ajustar opacidade das linhas para garantir leitura do texto.
 
-## FASE 3: Conteúdo e Layout [ ]
-- [ ] Criar container central com efeito Glassmorphism.
-- [ ] Inserir Textos (H1 e H2) conforme Blueprint.
-- [ ] Inserir Footer com créditos para "Joannderson Lucena".
+## FASE 3: Conteúdo e Layout [x]
+- [x] Criar container central com efeito Glassmorphism.
+- [x] Inserir Textos (H1 e H2) conforme Blueprint.
+- [x] Inserir Footer com créditos para "Joannderson Lucena".
 - [ ] Ajustar responsividade (tamanhos de fonte e padding no mobile).
 
 ## FASE 4: Polimento Final [ ]

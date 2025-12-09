@@ -1,5 +1,12 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 3 Concluída
+### Adicionado
+- **Conteúdo Principal:** Inserção do Header com a logo (`logo.png`), da Hero Section com textos (`H1`, `H2`) e do Footer com os devidos créditos.
+- **Efeito Visual:** Implementado o efeito "Glassmorphism" no container central.
+### Modificado
+- **Ajuste de UI:** A translucidez do container foi aumentada (opacidade de 20% para 10%) para melhor integração visual, conforme solicitado.
+
 ## [2024-07-27] - FASE 1 & 2 Concluídas
 ### Adicionado
 - **Estrutura HTML:** Arquivo `index.html` criado com estrutura semântica, importação de fontes (Montserrat) e Tailwind CSS via CDN.
