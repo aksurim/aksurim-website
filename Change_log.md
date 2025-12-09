@@ -1,5 +1,11 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 3 Concluída (Responsividade)
+### Adicionado
+- **Responsividade:** Aplicadas classes responsivas do Tailwind CSS para ajustar fontes e espaçamentos em dispositivos móveis.
+### Modificado
+- **Ajuste de UI (Logo):** O tamanho da logo foi reduzido e o espaçamento superior aumentado para melhor alinhamento visual, conforme feedback.
+
 ## [2024-07-27] - FASE 3 Concluída
 ### Adicionado
 - **Conteúdo Principal:** Inserção do Header com a logo (`logo.png`), da Hero Section com textos (`H1`, `H2`) e do Footer com os devidos créditos.

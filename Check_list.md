@@ -15,7 +15,7 @@
 - [x] Criar container central com efeito Glassmorphism.
 - [x] Inserir Textos (H1 e H2) conforme Blueprint.
 - [x] Inserir Footer com créditos para "Joannderson Lucena".
-- [ ] Ajustar responsividade (tamanhos de fonte e padding no mobile).
+- [x] Ajustar responsividade (tamanhos de fonte e padding no mobile).
 
 ## FASE 4: Polimento Final [ ]
 - [ ] Adicionar animação de Fade-in ao carregar a página.
