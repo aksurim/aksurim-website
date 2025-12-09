@@ -1,5 +1,11 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 4 (Polimento e Otimização)
+### Adicionado
+- **Otimização Mobile:** O número de partículas da animação agora é reduzido em telas menores para garantir melhor performance.
+### Modificado
+- **Animação de Entrada:** O efeito de "fade-in" foi aprimorado para uma animação "staggered" (em cascata), proporcionando uma entrada mais elegante dos elementos na tela.
+
 ## [2024-07-27] - FASE 4 (Polimento)
 ### Adicionado
 - **Animação de Entrada:** Implementado um efeito de "fade-in" suave para o conteúdo da página no carregamento, melhorando a experiência inicial do usuário.

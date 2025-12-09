@@ -17,7 +17,7 @@ let particlesArray;
 const particleColors = ['#DAF043', '#06777F'];
 
 // Propriedades das partículas
-const maxParticles = 100;
+let maxParticles = 100;
 const particleSize = 3;
 const connectionDistance = 150;
 
@@ -53,8 +53,18 @@ class Particle {
     }
 }
 
+// Define o número de partículas com base na largura da tela
+function setParticleCount() {
+    if (window.innerWidth < 768) {
+        maxParticles = 40;
+    } else {
+        maxParticles = 100;
+    }
+}
+
 // Cria o array de partículas
 function init() {
+    setParticleCount();
     particlesArray = [];
     for (let i = 0; i < maxParticles; i++) {
         particlesArray.push(new Particle());
@@ -97,7 +107,7 @@ function animate() {
 window.addEventListener('resize', () => {
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    init();
+    init(); // Reinicia as partículas com a contagem correta
 });
 
 init();

@@ -19,5 +19,5 @@
 
 ## FASE 4: Polimento Final [ ]
 - [x] Adicionar animação de Fade-in ao carregar a página.
-- [ ] Verificar performance no mobile.
+- [x] Verificar performance no mobile.
 - [ ] Atualizar documentação final.
