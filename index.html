@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aksurim Software - Em Breve</title>
 
-    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,7 +19,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
     <script>
-        // Configuração personalizada para o Tailwind CSS via CDN
         tailwind.config = {
             theme: {
                 extend: {
@@ -39,9 +37,8 @@
     <style>
         body {
             font-family: 'Montserrat', sans-serif;
-            overflow-x: hidden;
+            overflow: hidden; /* Garante que a página não tenha rolagem */
         }
-
         #particle-canvas {
             position: fixed;
             top: 0;
@@ -50,19 +47,11 @@
             height: 100%;
             z-index: 0;
         }
-
-        header, main, footer {
-            position: relative;
-            z-index: 1;
-        }
-
-        /* Estilos para a animação Staggered */
         .fade-in-item {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-
         .fade-in-item.visible {
             opacity: 1;
             transform: translateY(0);
@@ -73,40 +62,73 @@
 
     <canvas id="particle-canvas"></canvas>
 
-    <header class="absolute top-0 left-0 w-full px-4 pt-6 md:px-8 md:pt-10">
-        <img src="assets/logo.png" alt="Logo Aksurim" class="h-7 md:h-9 fade-in-item">
-    </header>
+    <main class="flex flex-col items-center justify-center h-screen px-4">
 
-    <main class="flex items-center justify-center h-screen px-4">
-        <div class="text-center max-w-3xl mx-auto p-6 md:p-8 bg-black/10 backdrop-blur-md rounded-xl shadow-lg">
-            <div class="mb-4 fade-in-item">
-                <span class="inline-block bg-accent-lime text-bg-primary text-sm font-bold px-4 py-1 rounded-full animate-pulse">
-                    Em Breve
-                </span>
+        <!-- Card Principal (Aumentado) -->
+        <div class="relative w-11/12 h-5/6 bg-black/40 backdrop-blur-md rounded-2xl shadow-lg p-8 md:p-12">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 h-full">
+
+                <!-- Coluna 1: Conteúdo Principal -->
+                <div class="col-span-1 flex flex-col text-left">
+                    <header class="mb-12">
+                        <img src="assets/logo.png" alt="Logo Aksurim" class="h-7 md:h-9 fade-in-item" style="transition-delay: 100ms;">
+                    </header>
+
+                    <div class="flex-grow flex flex-col justify-start">
+                        <h1 class="text-3xl md:text-4xl font-bold mb-6 fade-in-item" style="transition-delay: 300ms;">
+                            O próximo nível<br>do seu negócio <br><span class="font-bold text-accent-lime">em um clique.</span>
+                        </h1>
+
+                        <div class="space-x-4 mb-12 fade-in-item" style="transition-delay: 400ms;">
+                            <button class="px-6 py-2 bg-accent-orange text-text-light font-bold rounded-full opacity-50 cursor-not-allowed">Entrar</button>
+                            <button class="px-6 py-2 border border-gray-600 bg-bg-primary text-gray-400 font-bold rounded-full opacity-50 cursor-not-allowed">Cadastrar agora</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 2: Navegação e Texto Secundário -->
+                <div class="col-span-1 pt-2 flex flex-col">
+                    <nav class="flex justify-center space-x-8 text-accent-orange mb-12 fade-in-item" style="transition-delay: 200ms;">
+                        <a href="#" class="font-bold hover:text-text-light transition-colors">Sobre</a>
+                        <a href="#" class="font-bold hover:text-text-light transition-colors">Nossos serviços</a>
+                        <a href="#" class="font-bold hover:text-text-light transition-colors">SAC</a>
+                    </nav>
+                    <div class="flex-grow flex flex-col justify-start">
+                        <div class="fade-in-item" style="transition-delay: 500ms;">
+                            <p class="text-2xl md:text-3xl font-semibold mb-2">
+                                <span class="text-accent-lime">A plataforma inteligente</span><br>
+                                que <span class="font-bold text-accent-orange">Simplifica</span> o controle<br>
+                                do seu Negócio
+                            </p>
+                            <p class="text-sm text-gray-400 max-w-md">
+                                Vamos te ajudar a registrar automaticamente tudo o que você vende pela internet. Com nossa tecnologia, você controla estoque, gastos e receita em um único painel.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coluna 3: Vazia -->
+                <div class="hidden md:block col-span-1"></div>
+
             </div>
-            <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-4 fade-in-item">
-                O próximo nível do seu negócio em um clique.
-            </h1>
-            <p class="text-base sm:text-lg md:text-xl text-gray-300 fade-in-item">
-                Descomplicando seu jeito de fazer negócios. A plataforma inteligente que simplifica o controle da sua empresa.
-            </p>
         </div>
-    </main>
 
-    <footer class="absolute bottom-0 w-full p-4 text-center text-sm text-gray-400 fade-in-item">
-        <p>© 2025 Aksurim Software</p>
-        <p>Joannderson Lucena - CEO/Developer</p>
-    </footer>
+        <footer class="w-full pt-4 text-center text-sm text-gray-400 fade-in-item" style="transition-delay: 700ms;">
+            <p>© 2025 Aksurim Software</p>
+            <p>Joannderson Lucena - CEO/Developer</p>
+        </footer>
+    </main>
 
     <script src="script.js"></script>
     <script>
-        // Script para a animação Staggered
         window.addEventListener('load', () => {
             const items = document.querySelectorAll('.fade-in-item');
-            items.forEach((item, index) => {
+            items.forEach((item) => {
+                const delay = parseInt(item.style.transitionDelay) || 0;
                 setTimeout(() => {
                     item.classList.add('visible');
-                }, index * 300); // Atraso de 300ms entre cada item
+                }, delay);
             });
         });
     </script>

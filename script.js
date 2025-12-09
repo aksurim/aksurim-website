@@ -71,27 +71,6 @@ function init() {
     }
 }
 
-// Desenha as linhas de conexão entre as partículas
-function connect() {
-    for (let a = 0; a < particlesArray.length; a++) {
-        for (let b = a; b < particlesArray.length; b++) {
-            const distance = Math.sqrt(
-                (particlesArray[a].x - particlesArray[b].x) * (particlesArray[a].x - particlesArray[b].x) +
-                (particlesArray[a].y - particlesArray[b].y) * (particlesArray[a].y - particlesArray[b].y)
-            );
-
-            if (distance < connectionDistance) {
-                ctx.strokeStyle = 'rgba(245, 245, 245, 0.1)'; // text-light com 10% de opacidade
-                ctx.lineWidth = 1;
-                ctx.beginPath();
-                ctx.moveTo(particlesArray[a].x, particlesArray[a].y);
-                ctx.lineTo(particlesArray[b].x, particlesArray[b].y);
-                ctx.stroke();
-            }
-        }
-    }
-}
-
 // Loop de animação
 function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -99,7 +78,7 @@ function animate() {
         particlesArray[i].update();
         particlesArray[i].draw();
     }
-    connect();
+    // A função connect() foi removida daqui para não desenhar as linhas.
     requestAnimationFrame(animate);
 }
 

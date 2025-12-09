@@ -1,5 +1,24 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 5 (Ajustes Finos de Layout e Tipografia)
+### Modificado
+- **Layout do Card:** O conteúdo de texto foi redistribuído entre a Coluna 1 e a Coluna 2 para melhor equilíbrio visual.
+- **Tipografia:** Realizados ajustes finos nos tamanhos e pesos das fontes do título principal, título secundário e navegação para refinar a hierarquia visual. A quebra de linha e o negrito no título principal foram ajustados manualmente para maior impacto.
+
+## [2024-07-27] - FASE 5 (Revisão da Arquitetura de Layout)
+### Modificado
+- **Arquitetura de Layout:** O design foi revisto para uma estrutura de 3 colunas, com a imagem da segunda coluna sendo um elemento de posição fixa para permitir a rolagem do conteúdo principal.
+
+## [2024-07-27] - FASE 5 (Reestruturação do Layout)
+### Modificado
+- **Layout do Card:** O layout do card principal foi reestruturado para um design de 2 colunas, incluindo uma nova barra de navegação, novos textos com cores específicas e botões de ação (desabilitados).
+- **Conteúdo:** O conteúdo de texto foi completamente alterado para refletir a nova proposta de valor.
+
+## [2024-07-27] - FASE 5 (Início do Redesign)
+### Adicionado
+- **Planejamento:** Início da fase de redesign da "Nova Página".
+- **Estrutura Git:** O branch `master` foi renomeado para `main`. Foram criados os branches `Nova_Page` (base) e `feat/card-secundario` (trabalho) para o desenvolvimento da nova estrutura de layout.
+
 ## [2024-07-27] - FASE 4 (Conclusão e Decisão de Arquitetura)
 ### Modificado
 - **Arquitetura CSS:** Após tentativa de migração para uma instalação local do Tailwind CSS via `npm`, foram encontrados problemas de ambiente que impediram a execução dos scripts de compilação.

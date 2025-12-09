@@ -21,3 +21,18 @@
 - [x] Adicionar animação de Fade-in ao carregar a página.
 - [x] Verificar performance no mobile.
 - [x] Atualizar documentação final.
+
+---
+
+## FASE 5: Redesign (Nova Página) [ ]
+- [x] Adicionar um segundo container "Glassmorphism" maior por trás do card existente.
+- [x] Unificar cards em um único container maior.
+- [x] Mover a logo para o canto superior esquerdo do card.
+- [x] Implementar layout de grid com 2 colunas dentro do card.
+- [x] Adicionar barra de navegação (Sobre, Serviços, SAC) no topo.
+- [x] Adicionar novo conteúdo de texto com cores específicas.
+- [x] Adicionar botões de ação desabilitados ("Entrar", "Cadastrar agora").
+- [x] Reservar espaço para imagem na segunda coluna.
+- [ ] Reestruturar para layout de 3 colunas.
+- [ ] Implementar imagem como elemento fixo (background-like).
+- [ ] Habilitar rolagem da página principal.
