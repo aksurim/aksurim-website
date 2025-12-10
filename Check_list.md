@@ -33,6 +33,11 @@
 - [x] Adicionar novo conteúdo de texto com cores específicas.
 - [x] Adicionar botões de ação desabilitados ("Entrar", "Cadastrar agora").
 - [x] Reservar espaço para imagem na segunda coluna.
-- [ ] Reestruturar para layout de 3 colunas.
+- [x] Reestruturar para layout de 3 colunas.
 - [ ] Implementar imagem como elemento fixo (background-like).
-- [ ] Habilitar rolagem da página principal.
+- [x] Habilitar rolagem da página principal.
+- [ ] Atualizar Hero Section com conteúdo real.
+- [ ] Criar e popular seção "Sobre Nós".
+- [ ] Criar e popular seção "Nossas Soluções".
+- [ ] Criar e popular seção "Serviços".
+- [ ] Criar e popular seção "Canais de Atendimento".

@@ -1,5 +1,11 @@
 # Change Log - Aksurim LP
 
+## [2024-07-27] - FASE 5 (Implementação de Conteúdo Institucional)
+### Adicionado
+- **Conteúdo Real:** A página foi populada com o conteúdo institucional completo da Aksurim Software, incluindo novas seções para "Sobre Nós", "Soluções", "Serviços" e "Canais de Atendimento".
+### Modificado
+- **Arquitetura da Página:** O layout foi transformado de uma tela única e fixa para uma página rolável com múltiplas seções, para acomodar o novo conteúdo.
+
 ## [2024-07-27] - FASE 5 (Ajustes Finos de Layout e Tipografia)
 ### Modificado
 - **Layout do Card:** O conteúdo de texto foi redistribuído entre a Coluna 1 e a Coluna 2 para melhor equilíbrio visual.

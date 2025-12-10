@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aksurim Software - Em Breve</title>
+    <title>Aksurim Software - Inovação que Conecta. Tecnologia que Resolve.</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -35,9 +35,12 @@
     </script>
 
     <style>
+        html {
+            scroll-behavior: smooth;
+        }
         body {
             font-family: 'Montserrat', sans-serif;
-            overflow: hidden; /* Garante que a página não tenha rolagem */
+            overflow-x: hidden;
         }
         #particle-canvas {
             position: fixed;
@@ -45,16 +48,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: 0;
-        }
-        .fade-in-item {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-        .fade-in-item.visible {
-            opacity: 1;
-            transform: translateY(0);
+            z-index: -1;
         }
     </style>
 </head>
@@ -62,75 +56,126 @@
 
     <canvas id="particle-canvas"></canvas>
 
-    <main class="flex flex-col items-center justify-center h-screen px-4">
-
-        <!-- Card Principal (Aumentado) -->
-        <div class="relative w-11/12 h-5/6 bg-black/40 backdrop-blur-md rounded-2xl shadow-lg p-8 md:p-12">
-
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-8 h-full">
-
-                <!-- Coluna 1: Conteúdo Principal -->
-                <div class="col-span-1 flex flex-col text-left">
-                    <header class="mb-12">
-                        <img src="assets/logo.png" alt="Logo Aksurim" class="h-7 md:h-9 fade-in-item" style="transition-delay: 100ms;">
-                    </header>
-
-                    <div class="flex-grow flex flex-col justify-start">
-                        <h1 class="text-3xl md:text-4xl font-bold mb-6 fade-in-item" style="transition-delay: 300ms;">
-                            O próximo nível<br>do seu negócio <br><span class="font-bold text-accent-lime">em um clique.</span>
-                        </h1>
-
-                        <div class="space-x-4 mb-12 fade-in-item" style="transition-delay: 400ms;">
-                            <button class="px-6 py-2 bg-accent-orange text-text-light font-bold rounded-full opacity-50 cursor-not-allowed">Entrar</button>
-                            <button class="px-6 py-2 border border-gray-600 bg-bg-primary text-gray-400 font-bold rounded-full opacity-50 cursor-not-allowed">Cadastrar agora</button>
-                        </div>
+    <header class="fixed top-0 left-0 w-full bg-black/40 backdrop-blur-md z-50 shadow-lg">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-16">
+                <div class="flex-shrink-0">
+                    <img class="h-8" src="assets/logo.png" alt="Aksurim Logo">
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-4">
+                        <a href="#sobre" class="text-gray-300 hover:text-accent-lime px-3 py-2 rounded-md text-sm font-bold">Sobre Nós</a>
+                        <a href="#solucoes" class="text-gray-300 hover:text-accent-lime px-3 py-2 rounded-md text-sm font-bold">Soluções</a>
+                        <a href="#servicos" class="text-gray-300 hover:text-accent-lime px-3 py-2 rounded-md text-sm font-bold">Serviços</a>
+                        <a href="#contato" class="text-gray-300 hover:text-accent-lime px-3 py-2 rounded-md text-sm font-bold">Contato</a>
                     </div>
                 </div>
-
-                <!-- Coluna 2: Navegação e Texto Secundário -->
-                <div class="col-span-1 pt-2 flex flex-col">
-                    <nav class="flex justify-center space-x-8 text-accent-orange mb-12 fade-in-item" style="transition-delay: 200ms;">
-                        <a href="#" class="font-bold hover:text-text-light transition-colors">Sobre</a>
-                        <a href="#" class="font-bold hover:text-text-light transition-colors">Nossos serviços</a>
-                        <a href="#" class="font-bold hover:text-text-light transition-colors">SAC</a>
-                    </nav>
-                    <div class="flex-grow flex flex-col justify-start">
-                        <div class="fade-in-item" style="transition-delay: 500ms;">
-                            <p class="text-2xl md:text-3xl font-semibold mb-2">
-                                <span class="text-accent-lime">A plataforma inteligente</span><br>
-                                que <span class="font-bold text-accent-orange">Simplifica</span> o controle<br>
-                                do seu Negócio
-                            </p>
-                            <p class="text-sm text-gray-400 max-w-md">
-                                Vamos te ajudar a registrar automaticamente tudo o que você vende pela internet. Com nossa tecnologia, você controla estoque, gastos e receita em um único painel.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Coluna 3: Vazia -->
-                <div class="hidden md:block col-span-1"></div>
-
             </div>
-        </div>
+        </nav>
+    </header>
 
-        <footer class="w-full pt-4 text-center text-sm text-gray-400 fade-in-item" style="transition-delay: 700ms;">
+    <div class="relative">
+        <!-- Hero Section -->
+        <section class="h-screen flex items-center justify-center">
+            <div class="relative w-11/12 h-5/6 bg-black/40 backdrop-blur-md rounded-2xl shadow-lg p-8 md:p-12">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 h-full">
+                    <div class="col-span-1 flex flex-col text-left justify-center">
+                        <div class="pl-10"> <!-- Ajuste o padding aqui se necessário, ex: pl-4 -->
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Inovação que <span class="text-accent-lime">Conecta</span>.<br>Tecnologia que <span class="text-accent-orange">Resolve</span>.</h1>
+                            <p class="text-lg text-gray-300 mb-8 max-w-lg">Desenvolvemos ecossistemas digitais e soluções de gestão inteligentes para transformar o seu negócio. Da gestão de MEIs à revolução do mercado automotivo.</p>
+                            <div class="space-x-4">
+                                <a href="#solucoes" class="inline-block px-8 py-3 bg-accent-lime text-bg-primary font-bold rounded-full">Conheça Nossas Soluções</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden md:block col-span-1">
+                        <!-- Espaço para imagem futura -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre Nós -->
+        <section id="sobre" class="py-20 px-4">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4 inline-block border-b-2 border-accent-orange pb-2">Sobre a <span class="text-accent-lime">Aksurim Software</span></h2>
+                <p class="text-lg text-gray-300 leading-relaxed mt-4">
+                    "A Aksurim Software não é apenas uma empresa de desenvolvimento; somos um hub de inovação focado em resolver problemas reais através da tecnologia de ponta. Nascemos com a missão de eliminar a complexidade. Seja conectando setores inteiros através de marketplaces disruptivos ou simplificando a rotina do pequeno empreendedor, nosso DNA é 100% focado em performance, escalabilidade e usabilidade. Acreditamos que o software deve trabalhar para você, e não o contrário. Por isso, utilizamos as arquiteturas mais modernas do mercado (Microservices, AI, Cloud Computing) para entregar estabilidade e segurança."
+                </p>
+            </div>
+        </section>
+
+        <!-- Nossas Soluções -->
+        <section id="solucoes" class="py-20 px-4 bg-black/40 backdrop-blur-md">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="text-3xl font-bold text-center mb-12 inline-block border-b-2 border-accent-orange pb-2">Nossas <span class="text-accent-lime">Soluções Proprietárias</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+                    <div class="bg-bg-primary p-8 rounded-lg shadow-lg">
+                        <span class="inline-block bg-accent-orange text-text-light text-xs font-bold px-3 py-1 rounded-full mb-4 animate-pulse">Em Breve</span>
+                        <h3 class="text-2xl font-bold mb-2 text-accent-lime">SPASE Connect</h3>
+                        <p class="text-gray-300">A revolução do Aftermarket Automotivo. O Speed Parts and Service Connect é um marketplace B2B2C inteligente que utiliza reconhecimento visual e algoritmos de compatibilidade para conectar, em segundos, quem precisa de uma peça a quem tem a solução. Um ecossistema completo integrando varejo, distribuição e serviços mecânicos.</p>
+                    </div>
+                    <div class="bg-bg-primary p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-2 text-accent-lime">SyS Aksurim (Aksurim Gestão)</h3>
+                        <p class="text-gray-300">Tecnologia de gestão feita para quem não tem tempo a perder. Um sistema ERP focado em MEIs e pequenas empresas, desenhado para descomplicar o controle de vendas, estoque e financeiro. Simples, rápido e na nuvem.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Serviços -->
+        <section id="servicos" class="py-20 px-4">
+            <div class="max-w-6xl mx-auto text-center">
+                <h2 class="text-3xl font-bold text-center mb-12 inline-block border-b-2 border-accent-orange pb-2">Serviços de <span class="text-accent-lime">Tecnologia</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center mt-4">
+                    <div class="bg-black/40 p-8 rounded-lg backdrop-blur-md">
+                        <h3 class="text-xl font-bold mb-2">Desenvolvimento Web & Sites</h3>
+                        <p class="text-gray-400">Criação de presença digital robusta para empresas que buscam autoridade na internet. Sites rápidos, responsivos e otimizados para SEO.</p>
+                    </div>
+                    <div class="bg-black/40 p-8 rounded-lg backdrop-blur-md">
+                        <h3 class="text-xl font-bold mb-2">Hospedagem & Infraestrutura</h3>
+                        <p class="text-gray-400">Garantimos que seu negócio se mantenha online com segurança e velocidade, utilizando servidores de alta performance.</p>
+                    </div>
+                    <div class="bg-black/40 p-8 rounded-lg backdrop-blur-md">
+                        <h3 class="text-xl font-bold mb-2">Consultoria em Transformação Digital</h3>
+                        <p class="text-gray-400">Analisamos o seu negócio e desenhamos a arquitetura tecnológica ideal para o seu crescimento.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SAC -->
+        <section id="contato" class="py-20 px-4 bg-black/40 backdrop-blur-md">
+            <div class="max-w-4xl mx-auto text-center">
+                <h2 class="text-3xl font-bold mb-4 inline-block border-b-2 border-accent-orange pb-2">Canais de Atendimento e <span class="text-accent-lime">Suporte</span></h2>
+                <p class="text-lg text-gray-300 mb-8 mt-4">Estamos prontos para atender sua demanda, seja para suporte técnico de nossos produtos ou para novos projetos.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-8">
+                    <div>
+                        <h4 class="font-bold">Comercial & Parcerias</h4>
+                        <a href="mailto:contato@aksurim.com" class="text-accent-lime hover:underline">contato@aksurim.com</a>
+                    </div>
+                    <div>
+                        <h4 class="font-bold">Suporte Técnico (SAC)</h4>
+                        <a href="mailto:suporte@aksurim.com" class="text-accent-lime hover:underline">suporte@aksurim.com</a>
+                    </div>
+                </div>
+                 <p class="text-sm text-gray-500 mt-8">📍 Campina Grande - PB - Atuando globalmente.</p>
+            </div>
+        </section>
+
+        <footer class="w-full py-8 text-center text-sm text-gray-400">
             <p>© 2025 Aksurim Software</p>
             <p>Joannderson Lucena - CEO/Developer</p>
         </footer>
-    </main>
+    </div>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5583991238327" target="_blank" class="fixed bottom-5 right-5 bg-green-500 hover:bg-green-600 text-white p-3 rounded-full shadow-lg transition-transform transform hover:scale-110 z-50">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.487 5.235 3.487 8.413.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.357 1.849 6.081l.244.363-1.241 4.515 4.639-1.219.356.217z"/>
+        </svg>
+    </a>
 
     <script src="script.js"></script>
-    <script>
-        window.addEventListener('load', () => {
-            const items = document.querySelectorAll('.fade-in-item');
-            items.forEach((item) => {
-                const delay = parseInt(item.style.transitionDelay) || 0;
-                setTimeout(() => {
-                    item.classList.add('visible');
-                }, delay);
-            });
-        });
-    </script>
 </body>
 </html>
