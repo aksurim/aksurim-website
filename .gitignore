@@ -1,11 +1,15 @@
-/tmp
-/out-tsc
+# Arquivos de documentação interna e planejamento
+Regras_Projeto.md
+Blueprint.md
+Change_log.md
+Check_list.md
 
-/node_modules
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-/.pnp
-.pnp.js
+# Arquivos de configuração do IDE (WebStorm/IntelliJ)
+.idea/
 
-.vscode/*
+# Arquivos gerados pelo NPM (não mais utilizados)
+node_modules/
+package-lock.json
+tailwind.config.js
+/src/
+/dist/
